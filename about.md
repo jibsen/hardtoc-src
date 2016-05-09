@@ -4,12 +4,11 @@ title: About
 permalink: /about/
 ---
 
-This is the base Jekyll theme. You can find out more info about customizing your Jekyll theme, as well as basic Jekyll usage documentation at [jekyllrb.com](http://jekyllrb.com/)
+Hard to C is a blog about programming. About the problems, bugs and
+aha-moments you encounter while working on projects.
 
-You can find the source code for the Jekyll new theme at:
-{% include icon-github.html username="jglovier" %} /
-[jekyll-new](https://github.com/jglovier/jekyll-new)
+As the title might suggest, I do most of my coding in C/C++, so many posts
+will be about those languages, though I do use other languages as well (C#,
+Perl, asm, ...).
 
-You can find the source code for Jekyll at
-{% include icon-github.html username="jekyll" %} /
-[jekyll](https://github.com/jekyll/jekyll)
+A big thanks to [DonationCoder.com](http://www.donationcoder.com/) for hosting.
