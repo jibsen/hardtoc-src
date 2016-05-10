@@ -1,8 +1,9 @@
 ---
-layout: post
-title:  "Additional Trouble"
-date:   2005-02-09 11:01:13
-tags:   [C]
+layout:  post
+title:   "Additional Trouble"
+date:    2005-02-09 11:01:13
+author:  "jibsen"
+tags:    [C]
 ---
 2 plus 2 is 4, but does that generalize?
 
@@ -13,9 +14,11 @@ What is your immediate reaction to this little program?
 
 int main(void)
 {
-    if (20000 + 20000 == 40000) printf("HardToC");
+        if (20000 + 20000 == 40000) {
+                printf("HardToC");
+        }
 
-    return 0;
+        return 0;
 }
 {% endhighlight %}
 

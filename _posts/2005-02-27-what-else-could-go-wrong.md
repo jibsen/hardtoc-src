@@ -1,8 +1,9 @@
 ---
-layout: post
-title:  "What Else Could Go Wrong?"
-date:   2005-02-27 13:04:20
-tags:   [cpp]
+layout:  post
+title:   "What Else Could Go Wrong?"
+date:    2005-02-27 13:04:20
+author:  "jibsen"
+tags:    ["C++"]
 ---
 [JrDebugLogger][] is a very nice debug logging library. Much of it's
 functionality is implemented through macros to allow it to be selectively left
@@ -42,18 +43,18 @@ Consider this use:
 
 {% highlight cpp %}
 if (i > limit)
-    DEBUGOUT << "i too big";
+        DEBUGOUT << "i too big";
 else
-    do_computation(i);
+        do_computation(i);
 {% endhighlight %}
 
 it expands to:
 
 {% highlight cpp %}
 if (i > limit)
-    if (debug_on) debug_stream << "i too big";
+        if (debug_on) debug_stream << "i too big";
 else
-    do_computation(i);
+        do_computation(i);
 {% endhighlight %}
 
 This is valid C++, and compiled without warnings on the three compilers I
@@ -70,12 +71,11 @@ statements to the same effect are present in the C++ standards.
 So the above is equivalent to:
 
 {% highlight cpp %}
-if (i > limit)
-{
-    if (debug_on)
-        debug_stream << "i too big";
-    else
-        do_computation(i);
+if (i > limit) {
+        if (debug_on)
+                debug_stream << "i too big";
+        else
+                do_computation(i);
 }
 {% endhighlight %}
 
@@ -92,23 +92,23 @@ We now get the expansion:
 
 {% highlight cpp %}
 if (i > limit)
-    if (!debug_on) ; else debug_stream << "i too big";
+        if (!debug_on) ; else debug_stream << "i too big";
 else
-    do_computation(i);
+        do_computation(i);
 {% endhighlight %}
 
 and the compiler will correctly associate the users else with his if. So it is
 equivalent to:
 
 {% highlight cpp %}
-if (i > limit)
-{
-    if (!debug_on)
-        ;
-    else
-        debug_stream << "i too big";
-} else {
-    do_computation(i);
+if (i > limit) {
+        if (!debug_on)
+                ;
+        else
+                debug_stream << "i too big";
+}
+else {
+        do_computation(i);
 }
 {% endhighlight %}
 

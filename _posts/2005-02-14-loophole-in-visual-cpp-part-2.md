@@ -1,8 +1,10 @@
 ---
-layout: post
-title:  "Loophole in Visual C++, Part 2"
-date:   2005-02-14 08:40:46
-tags:   [C, bug, compiler]
+layout:  post
+title:   "Loophole in Visual C++, Part 2"
+date:    2005-02-14 08:40:46
+author:  "jibsen"
+tags:    [C, Bug, Compiler]
+excerpt: ""
 ---
 Here is a slightly more elaborate example:
 
@@ -12,26 +14,29 @@ Here is a slightly more elaborate example:
 
 unsigned int ratio(unsigned int x, unsigned int y)
 {
-    if (x <= UINT_MAX / 100) x *= 100; else y /= 100;
+        if (x <= UINT_MAX / 100) {
+                x *= 100; else y /= 100;
+        }
 
-    if (y == 0) y = 1;
+        if (y == 0) {
+                y = 1;
+        }
 
-    return x / y;
+        return x / y;
 }
 
 int main(void)
 {
-    unsigned int count;
+        unsigned int count;
 
-    for (count = 0x3fffffff; count != 0; ++count)
-    {
-        /* do something */
+        for (count = 0x3FFFFFFF; count != 0; ++count) {
+                /* Do something */
 
-        /* show progress */
-        printf("\r%u%% done", ratio(count, UINT_MAX));
-    }
+                /* Show progress */
+                printf("\r%u%% done", ratio(count, UINT_MAX));
+        }
 
-    return 0;
+        return 0;
 }
 {% endhighlight %}
 

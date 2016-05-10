@@ -1,9 +1,10 @@
 ---
-layout: post
-title:  "Loophole in Visual C++, Part 1"
-date:   2005-02-06 11:58:30
-author: "Jibz"
-tags:   [C, bug, compiler]
+layout:  post
+title:   "Loophole in Visual C++, Part 1"
+date:    2005-02-06 11:58:30
+author:  "jibsen"
+tags:    [C, Bug, Compiler]
+excerpt: ""
 ---
 Lets start this post by recalling what the gosp^H^H^H^Hstandard has to say
 about unsigned arithmetic:
@@ -23,14 +24,14 @@ Now consider the following program:
 
 int main(void)
 {
-    unsigned int count = 0;
+        unsigned int count = 0;
 
-    do {
-        printf("%u\n", count);
-        count += 1;
-    } while (count != 0);
+        do {
+                printf("%u\n", count);
+                count += 1;
+        } while (count != 0);
 
-    return 0;
+        return 0;
 }
 {% endhighlight %}
 
@@ -52,4 +53,4 @@ I have not tested the various VC8 betas, so if you have any of them installed,
 feel free to try it out and post your results (just remember to compile from
 the command-line using cl.exe and /O2).
 
-_By: {{ page.author }} Tags: {{ page.tags | array_to_sentence_string }}_
+_Tags: {{ page.tags | array_to_sentence_string }}_

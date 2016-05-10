@@ -1,8 +1,10 @@
 ---
-layout: post
-title:  "Herb Sutter on Visual C++"
-date:   2005-02-05 11:52:56
-tags:   [C, Programming, Time]
+layout:  post
+title:   "Herb Sutter on Visual C++"
+date:    2005-02-05 11:52:56
+author:  "jibsen"
+tags:    ["C++", MSVC]
+excerpt: ""
 ---
 Channel 9 has a great interview with Herb Sutter ([part 1][p1], [part 2][p2]).
 
