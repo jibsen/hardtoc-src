@@ -187,6 +187,9 @@
 .post-meta {
     font-size: $small-font-size;
     color: $grey-color;
+    .post-meta-item {
+        margin-right: 1em;
+    }
 }
 
 .post-link {
