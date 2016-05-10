@@ -52,5 +52,3 @@ like the optimizer fails to recognize the addition as changing the value of
 I have not tested the various VC8 betas, so if you have any of them installed,
 feel free to try it out and post your results (just remember to compile from
 the command-line using cl.exe and /O2).
-
-_Tags: {{ page.tags | array_to_sentence_string }}_
