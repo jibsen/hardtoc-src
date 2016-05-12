@@ -4,11 +4,6 @@ title:   "Long Division"
 date:    2010-09-08 06:35:41
 author:  "jibsen"
 tags:    [C, Compiler, Programming]
-excerpt: "The thing is, 32-bit x86 only has instructions for mixed mode 32/64
-  bit operations -- with one assembly instruction you can multiply two 32-bit
-  integers to get a 64-bit result, or you can divide a 64-bit integer by a
-  32-bit as long as the quotient fits in 32 bits. But to divide two 64-bit
-  integers, you have to emulate the operation in software."
 ---
 Integer types with at least 64 bits have been a part of the C standard for a
 while now (they were added in C99, and were a standard extension in many 32-bit

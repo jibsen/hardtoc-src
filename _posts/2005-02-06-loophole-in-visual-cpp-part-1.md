@@ -4,7 +4,9 @@ title:   "Loophole in Visual C++, Part 1"
 date:    2005-02-06 11:58:30
 author:  "jibsen"
 tags:    [C, Bug, Compiler]
-excerpt: ""
+excerpt: "However, if you compile it with cl.exe from Visual C++ using the /O2
+  switch (maximize speed) you get a somewhat surprising result; a single zero
+  and the program exits."
 ---
 Lets start this post by recalling what the gosp^H^H^H^Hstandard has to say
 about unsigned arithmetic:

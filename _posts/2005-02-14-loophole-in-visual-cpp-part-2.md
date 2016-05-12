@@ -4,7 +4,8 @@ title:   "Loophole in Visual C++, Part 2"
 date:    2005-02-14 08:40:46
 author:  "jibsen"
 tags:    [C, Bug, Compiler]
-excerpt: ""
+excerpt: "The program works as expected on the compilers I tried, except for
+  cl.exe from VC7 and VC71 with the /O2 switch, which stop at 25%."
 ---
 Here is a slightly more elaborate example:
 

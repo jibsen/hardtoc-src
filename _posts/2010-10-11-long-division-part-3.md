@@ -4,8 +4,10 @@ title:   "Long Division, Part 3"
 date:    2010-10-11 12:49:41
 author:  "jibsen"
 tags:    [C, CLR, Compiler, Information]
-excerpt: "To my surprise, I found the GCD test I wrote for Long Division ran
-  faster when compiled with WCRT."
+excerpt: "The CLR runtime contains optimizations for certain values (usually
+  when both operands fit in 32 bits), but for other cases optimizing the C
+  runtime functions appears to provide a direct improvement for the CLR as
+  well."
 ---
 I ended [part two][part2] of this series with an open question:
 
