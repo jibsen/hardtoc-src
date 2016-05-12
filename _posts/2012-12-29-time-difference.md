@@ -27,7 +27,7 @@ seconds = (secdiff % SEC_IN_MINUTE);
 {% endhighlight %}
 
 You often see something like this in timing code -- it works great for showing elapsed time in seconds, minutes, even hours. Do you see any problems with this approach?
-<!--more-->
+
 How many seconds are there in a month? That depends on which month of course. And even worse, it also depends on which year, due to <a href="http://en.wikipedia.org/wiki/Leap_year">leap years</a>.
 
 For instance, the difference between Jan 31st and Mar 1st is sometimes 29 days, sometimes 30 days, but always 1 month 1 day. The difference between Jul 2nd and Aug 1st is 30 days, but not a month.
