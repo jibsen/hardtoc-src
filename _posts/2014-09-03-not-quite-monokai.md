@@ -9,7 +9,7 @@ tags:    [Monokai, sRGB, TextMate, Themes]
 first release 10 years ago, a lot of people have contributed color themes, many
 of which have been ported to other editors.
 
-![Will the real Monokai please stand up?]({{ "/assets/realmonokai.png" | prepend: site.baseurl | prepend: site.url }})
+![Will the real Monokai please stand up?]({{ "/assets/realmonokai.png" | prepend: site.baseurl | prepend: site.url }}){:.center-image}
 
 If you are using a Windows or Linux text editor with such a conversion, you
 might be looking at something slightly different than what the designer
@@ -98,7 +98,7 @@ I wrote a [Python script](https://github.com/jibsen/tmcolorconv) to convert the
 RGB values in a tmTheme file from Generic RGB to sRGB. Here is a screenshot
 comparing Monokai original and sRGB in Sublime Text 3 on Windows:
 
-![Monokai original and sRGB]({{ "/assets/monokai_compare.png" | prepend: site.baseurl | prepend: site.url }})
+![Monokai original and sRGB]({{ "/assets/monokai_compare.png" | prepend: site.baseurl | prepend: site.url }}){:.center-image}
 
 You may object that the screenshot on the Monokai blog matches the dark
 appearance of the theme on Windows, but this is because the image is a GIF file

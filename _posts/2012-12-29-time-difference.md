@@ -7,7 +7,7 @@ tags:    [C, Programming, Time]
 ---
 This post is based on a discussion about <a href="http://www.donationcoder.com/forum/index.php?topic=33116.0">Progress Bars of Life</a>, where I was foolish enough to claim that printing a text string representing the difference between two times could not be that hard in C. It is not hard, but turned out not to be entirely trivial either.
 
-![Pocket Watch]({{ "/assets/stockvault-pocket-watch100366-300x225.jpg" | prepend: site.baseurl | prepend: site.url }})
+![Pocket Watch]({{ "/assets/stockvault-pocket-watch100366-300x225.jpg" | prepend: site.baseurl | prepend: site.url }}){:.center-image}
 
 The problem we will consider is; given two <a href="http://en.cppreference.com/w/c/chrono/tm"><code>tm</code> structs</a>, compute the difference in time between them, in such a way that we can easily format a string that gives a textual representation of it. We want years, months, days, hours, minutes, seconds.
 
