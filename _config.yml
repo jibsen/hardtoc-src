@@ -14,6 +14,7 @@ baseurl: "" # the subpath of your site, e.g. /blog
 url: "http://www.hardtoc.com" # the base hostname & protocol for your site
 twitter_username: twibsen
 github_username:  jibsen
+exclude: [README.md]
 
 # Build settings
 markdown: kramdown
