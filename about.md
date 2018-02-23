@@ -14,5 +14,3 @@ Go, Perl, Python, Rust, assembly language, ...).
 Unless stated otherwise, the posts are
 [CC-BY-SA](https://creativecommons.org/licenses/by-sa/4.0/), and any
 code snippets are [MIT](https://opensource.org/licenses/MIT).
-
-A big thanks to [DonationCoder.com](http://www.donationcoder.com/) for hosting.
