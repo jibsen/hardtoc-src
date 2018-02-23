@@ -13,7 +13,7 @@ This is pretty much the stock Jekyll generated site using the
 [Solarized](http://ethanschoonover.com/solarized) light color theme,
 [Source](https://github.com/adobe-fonts) fonts, and a few icons from
 [Font Awesome](https://fortawesome.github.io/Font-Awesome/). Source is
-[here](https://github.com/jibsen/hardtoc).
+[here](https://github.com/jibsen/hardtoc-src).
 
 One sad thing is that support for comments is gone. I could add something like
 Disqus, but quite frankly I don't think it is worth it. You can always send me
